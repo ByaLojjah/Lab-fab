@@ -1,0 +1,109 @@
+.body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* Style de la navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #FFFF;
+    top: 0;
+}
+
+.nav-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.nav-container a {
+    color: grey;
+    margin: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.nav-container ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar .nav-container ul span {
+    font-family: 'dancing script';
+    font-size: 36px;
+    color: #67645E;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+.navbar .nav-container ul li a {
+    margin: 0 30px;
+    font-family: 'Montserrat ';
+    font-size: 24px;
+}
+
+.navbar .nav-container ul a:hover {
+    color: #00B39B;
+}
+
+
+/* Style du slide */
+
+.slides{
+    background-color: #00B39B;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    border-radius: 10px ;
+}
+
+
+.fade {
+
+    position: absolute;
+    height: auto;
+    align-items: center;
+    margin-left: 35px; 
+ 
+}
+
+.fade img {
+    border-radius: 10px ;
+}
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1;
+    
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
