@@ -8,11 +8,18 @@
 
 /* Style de la navbar */
 .navbar {
-    position: fixed;
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    z-index: 1;
-    background-color: #FFFF;
+    height: 73px;
+    box-sizing: border-box;
+    position: fixed;
     top: 0;
+    left: 0;
+    z-index: 1;
+    background-color:  #F1F0EC;
 }
 
 .nav-container {
@@ -62,7 +69,7 @@
 /* Style du slide */
 
 .slides {
-    padding-bottom: 90px;
+    margin-top: 20px;
 }
 
 .slideshow-container {
@@ -74,7 +81,7 @@
 
 .fade {
 
-    position: absolute;
+    position: relative;
     height: auto;
     align-items: center;
     margin-left: 35px;
@@ -88,7 +95,7 @@
 
 .prev,
 .next {
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -112,8 +119,7 @@
 .rhode {
     background-color: #F1F0EC;
     display: flex;
-    margin-top: 600px;
-    position: relative;
+    margin-top: 40px;
     z-index: 3;
     width: 1300px;
     margin-left: 30px;
@@ -191,4 +197,26 @@
     background-color: #e0e0e0;
     padding: 10px 0;
     text-align: center;
+}
+
+/* Style de la boutique */
+
+.boutique{
+    padding: 10px;
+    margin-top: 90px;
+    margin-left: 145px; 
+}
+
+.boutic{
+    display: flex;
+
+}
+
+.article{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.article img{
+    background: #F1F0EC;
 }
