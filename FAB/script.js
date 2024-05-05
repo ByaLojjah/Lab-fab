@@ -17,3 +17,37 @@ function plusSlides(n) {
 }
 
 showSlides();
+
+// Scipte de la boutique//
+const boutonAjouterAuPanier = document.getElementById(".addbutton");
+
+boutonAjouterAuPanier.addEventListener("click", () => {
+    
+    const produit = {
+        nom: "Nom du produit",
+        prix: 10.99,
+        quantite: 1
+    };
+
+    alert(`Produit ajouté au panier : ${produit.nom} - Prix : ${produit.prix} €`);
+});
+
+
+// Scipte du panier//
+document.querySelectorAll('.remove').forEach(button => {
+    button.addEventListener('click', () => {
+        button.parentNode.parentNode.remove();
+        calculateTotal();
+    });
+});
+
+function calculateTotal() {
+    const prices = document.querySelectorAll('.product p');
+    let total = 0;
+    prices.forEach(price => {
+        const priceValue = parseFloat(price.textContent.replace('$', ''));
+        total += priceValue;
+    });
+    document.querySelector('.total p').textContent = `Total: $${total}`;
+}
+

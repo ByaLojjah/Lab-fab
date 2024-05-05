@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="body">
+<body>
     <header class="header">
         <!--Nav bar-->
         <nav class="navbar">
@@ -44,60 +44,29 @@
         </nav>
     </header>
     <main>
-        <div class="boutique">
-            <div class="boutic">
-                <div class="article">
-                    <div class="heart-icon">
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-heart" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                            </svg>
-                        </button>
+        <div class="container">
+            <div><span class="titre">SHOPPING CART</span></div>
+            <!--Article 1-->
+            <div class="article">
+                <img src="Images et Videos/produits rhode/milk-2000_f6a1ef26-809d-4707-8802-24b962315014_320x.png" alt="" height="140px" width="150px">
+                    <div id="button">
+                        <span class="name">Fluid</span> 
+                        <button class="buttonminus-btn">-</button>
+                        <span class="quantity-btn">1</span>
+                        <button class="buttonplus-btn"> + </button>
+                        <span class="price"> 25000 XOF</span>
+                        <button class="delete-btn">Supprimer</button>
+                        <button class="like-Btn">&#10084;</button>
+                        <span class="Total">25000 XOF</span>
                     </div>
-                    <img src="Images et Videos/produits rhode/brc-2000x2000_1_320x.png">
-                    <div>
-                        <button class="addbutton">Ajouter au panier</button>
-                    </div>
-                    <div class="Description">
-                        <h1>Nom de l'article</h1>
-                        <span>Description de l'article.</span>
-                        <span class="price">10.000 XOF</span>
-                    </div>
-                </div>
-
             </div>
-
-        
-        </div>
+            <div class="totalprice">
+                <span>Prix Total</span>
+                <span>0</span>
+            </div>  
     </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>Liens utiles</h3>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Boutique</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>À propos</h3>
-                <p>Miraï est une plateforme de revente de produits cosmétiques pour le corps et les cheveux, offrant une
-                    sélection soigneusement choisie pour une beauté naturelle et éclatante.</p>
-            </div>
-            <div class="footer-column">
-                <h3>Contact</h3>
-                <p>Adresse: 123 Rue Principale, Ville, Pays</p>
-                <p>Email: info@example.com</p>
-                <p>Téléphone: +1234567890</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 MonSite. Tous droits réservés.</p>
-        </div>
+    <footer>
+        <p>&copy; 2024 Online Store. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
