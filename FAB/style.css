@@ -241,48 +241,10 @@
 }
 
 /* Style du panier */
-.cart {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.product {
-    flex: 0 0 calc(50% - 20px);
-    background-color: #f9f9f9;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-}
-
-.product img {
-    max-width: 100px;
-}
-
-.product .details {
-    flex: 1;
-}
-
-.actions {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.total {
-    text-align: center;
-    margin-top: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
 
 
 .Total {
+    align-items: end;
     margin-left: 50px;
     font-size: 24px;
 }
@@ -300,18 +262,17 @@ footer {
     font-size: 30px;
     justify-content: center;
     display: flex;
-    margin-left: 400px;
+    margin-left: 100px;
     
 }
 .container img {
     margin-left: 10px;
 }
 
-
-
-.article {
+.produit {
+    margin-top: 40px;
     margin-bottom: 10px;
-    background-color: #BFBEC0;
+    background-color: #e0e0e0;
     display: flex;
     margin-left: 10px;
     justify-content: center;
@@ -343,12 +304,12 @@ footer {
 }
 
 .delete-btn {
-    background-color: #ff5c5c;
+    background-color: #BFBEC0;
     border: none;
     color: white;
     cursor: pointer;
     padding: 5px 10px;
-    font-size: 24px;
+    
 }
 
 .like-Btn{
@@ -358,8 +319,9 @@ footer {
 
 .totalprice {
     font-size: 28px;
-    margin-top: px;
-    margin-left: 120px;
+    margin-left: 1000px;
     border-radius: 5px;
     background-color: #ccc;
 }
+
+

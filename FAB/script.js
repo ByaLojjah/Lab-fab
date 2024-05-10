@@ -34,20 +34,4 @@ boutonAjouterAuPanier.addEventListener("click", () => {
 
 
 // Scipte du panier//
-document.querySelectorAll('.remove').forEach(button => {
-    button.addEventListener('click', () => {
-        button.parentNode.parentNode.remove();
-        calculateTotal();
-    });
-});
-
-function calculateTotal() {
-    const prices = document.querySelectorAll('.product p');
-    let total = 0;
-    prices.forEach(price => {
-        const priceValue = parseFloat(price.textContent.replace('$', ''));
-        total += priceValue;
-    });
-    document.querySelector('.total p').textContent = `Total: $${total}`;
-}
 
