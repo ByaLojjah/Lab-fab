@@ -3,7 +3,6 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-
 }
 
 /* Style de la navbar */
@@ -19,7 +18,7 @@
     top: 0;
     left: 0;
     z-index: 1;
-    background-color:  #F1F0EC;
+    background-color: #F1F0EC;
 }
 
 .nav-container {
@@ -39,7 +38,6 @@
     text-align: center;
 }
 
-
 .nav-container ul {
     display: flex;
     text-decoration: none;
@@ -54,7 +52,6 @@
     margin-right: 250px;
 }
 
-
 .navbar .nav-container ul li a {
     margin: 0 30px;
     font-family: 'Montserrat ';
@@ -65,9 +62,7 @@
     color: #00B39B;
 }
 
-
 /* Style du slide */
-
 .slides {
     margin-top: 20px;
 }
@@ -78,20 +73,16 @@
     border-radius: 10px;
 }
 
-
 .fade {
-
     position: relative;
     height: auto;
     align-items: center;
     margin-left: 35px;
-
 }
 
 .fade img {
     border-radius: 10px;
 }
-
 
 .prev,
 .next {
@@ -104,7 +95,6 @@
     font-weight: bold;
     font-size: 20px;
     z-index: 1;
-
 }
 
 .prev {
@@ -124,7 +114,7 @@
     width: 1300px;
     margin-left: 30px;
     height: 700px;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 .rhode img {
@@ -136,7 +126,7 @@
 .rhodetxt {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 .rhodetxt span {
@@ -148,7 +138,7 @@
     margin-left: 150px;
 }
 
-.rhodetxt p{
+.rhodetxt p {
     font-size: 20px;
     color: #67645E;
     font-weight: 23px;
@@ -200,72 +190,67 @@
 }
 
 /* Style de la boutique */
-
-.boutique{
+.boutique {
     padding: 10px;
     margin-top: 90px;
-    margin-left: 145px; 
+    margin-left: 145px;
 }
 
-.boutic{
+.boutic {
     display: flex;
     flex-wrap: wrap;
-
 }
 
-.article{
+.article {
     position: relative;
     margin-left: 20px;
     margin-top: 15px;
 }
 
-.article img{
+.article img {
     background: #F1F0EC;
 }
-
 
 .heart-icon {
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 8px; 
-    margin-right: 8px; 
+    margin-top: 8px;
+    margin-right: 8px;
 }
 
-.addbutton{
+.addbutton {
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 290px; 
-    margin-right: 100px; 
+    margin-top: 290px;
+    margin-right: 100px;
 }
 
 /* Style du panier */
-
-
 .Total {
     align-items: end;
     margin-left: 50px;
     font-size: 24px;
 }
 
-.container {
+.cartcontainer {
     font-family: Arial, sans-serif;
     display: block;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.titre{
+.titre {
     align-items: center;
     text-align: center;
     font-size: 30px;
     justify-content: center;
     display: flex;
     margin-left: 100px;
-    
 }
-.container img {
+
+.cartcontainer img {
     margin-left: 10px;
 }
 
@@ -279,10 +264,9 @@
     font-size: 20px;
 }
 
-.name{
+.name {
     margin-left: 40px;
 }
-
 
 .buttonminus-btn {
     margin-top: 60px;
@@ -309,10 +293,9 @@
     color: white;
     cursor: pointer;
     padding: 5px 10px;
-    
 }
 
-.like-Btn{
+.like-Btn {
     font-size: 26px;
     margin-bottom: -5px;
 }
@@ -323,5 +306,88 @@
     border-radius: 5px;
     background-color: #ccc;
 }
+
+
+/* Style du compte */
+.compte-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.compte-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.compte-container .form-group {
+    margin-bottom: 15px;
+}
+
+.compte-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.compte-container .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.compte-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.compte-container button:hover {
+    background-color: #555;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start; 
+    }
+
+    .nav-container {
+        justify-content: flex-start; 
+        padding: 20px; 
+    }
+
+    .navbar .nav-container ul span {
+        margin: 20px; 
+    }
+
+    .boutique {
+        margin: 20px; 
+    }
+
+    .cartcontainer {
+        margin: 20px; 
+    }
+
+    .titre {
+        margin: 20px; 
+    }
+
+    .compte-container {
+        max-width: 90%; 
+        margin: 30px auto;
+        padding: 15px;
+    }
+}
+
 
 
