@@ -124,6 +124,7 @@
 }
 
 .rhodetxt {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -209,6 +210,8 @@
 
 .article img {
     background: #F1F0EC;
+    width: 320px;
+    height: 320px;
 }
 
 .heart-icon {

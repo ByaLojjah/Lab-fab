@@ -71,3 +71,22 @@ document.addEventListener('DOMContentLoaded', function () {
         return initialGrandTotal;
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const cartItemsContainer = document.getElementById('cart-items');
+    let cart = localStorage.getItem('cart');
+    if (cart) {
+        cart = JSON.parse(cart);
+        cart.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('cart-item');
+            itemElement.innerHTML = `
+                <h2>${item.name}</h2>
+                <p>${item.description}</p>
+                <p>Prix: ${item.price} XOF</p>
+            `;
+            cartItemsContainer.appendChild(itemElement);
+        });
+    } else {
+        cartItemsContainer.innerHTML = '<p>Votre panier est vide.</p>';
+    }
+});

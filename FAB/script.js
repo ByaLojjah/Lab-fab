@@ -9,7 +9,7 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 5000);
+    setTimeout(showSlides, 3000);
 }
 
 function plusSlides(n) {
@@ -18,20 +18,8 @@ function plusSlides(n) {
 
 showSlides();
 
-// Scipte de la boutique//
-const boutonAjouterAuPanier = document.getElementById(".addbutton");
-
-boutonAjouterAuPanier.addEventListener("click", () => {
-    
-    const produit = {
-        nom: "Nom du produit",
-        prix: 10.99,
-        quantite: 1
-    };
-
-    alert(`Produit ajouté au panier : ${produit.nom} - Prix : ${produit.prix} €`);
-});
 
 
-// Scipte du panier//
+
+
 
