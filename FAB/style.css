@@ -34,6 +34,7 @@
 .nav-container a {
     color: grey;
     margin: 15px;
+    text-decoration: none;
     align-items: center;
     text-align: center;
 }
@@ -359,38 +360,50 @@
 }
 
 /* Media Queries */
-@media screen and (max-width: 768px) {
-    .navbar {
-        justify-content: flex-start; 
+@media screen and (max-width: 375px) {
+
+    .nav-container {  
+        width: 100%;
+        height: 100vh;    
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .nav-container {
-        justify-content: flex-start; 
-        padding: 20px; 
+    .body {
+        flex-direction: column;
     }
 
-    .navbar .nav-container ul span {
-        margin: 20px; 
-    }
-
-    .boutique {
-        margin: 20px; 
-    }
-
-    .cartcontainer {
-        margin: 20px; 
-    }
-
-    .titre {
-        margin: 20px; 
+    .main {
+        display: flex;
+        width: 100%;
     }
 
     .compte-container {
-        max-width: 90%; 
+        max-width: 90%;
         margin: 30px auto;
         padding: 15px;
     }
+
+    .rhode {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .rhodetxt {
+        align-items: center;
+    }
+
+    .rhodetxt span,
+    .rhodetxt p {
+        margin-left: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 30px;
+    }
 }
-
-
-
