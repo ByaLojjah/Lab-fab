@@ -1,4 +1,4 @@
-// Scipte des slides//
+// Scipte du slider//
 let slideIndex = 0;
 
 function showSlides() {

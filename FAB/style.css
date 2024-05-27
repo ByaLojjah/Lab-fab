@@ -362,7 +362,7 @@
 /* Media Queries */
 @media screen and (max-width: 375px) {
 
-    .nav-container {  
+    .nav-container a {  
         width: 100%;
         height: 100vh;    
         flex-direction: column;
